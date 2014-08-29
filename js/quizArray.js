@@ -1,4 +1,4 @@
-﻿var quizArray = [{
+var quizArray = [{
 		"id":"0",
 		"question":"A young hedgehog is called a kitten.",
 		"choice1":"TRUE",
@@ -29,10 +29,10 @@
 	},
 	{
 		"id":"4",
-		"question":"111,111,111 x 111,111,111 = 12,345,678,987,654,321",
+		"question":"1 x 1 - 1 + 1 = 1",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
-		"correct":"TRUE"
+		"correct":"FALSE"
 		
 	},
 	{
@@ -108,7 +108,7 @@
 		},
 		{
 		"id":"15",
-		"question":"It is impossible to lick your elbow.",
+		"question":"Your mouth uses 75 muscles when you speak!",
 		"choice1":"FALSE",
 		"choice2":"TRUE",
 		"correct":"TRUE"
@@ -220,10 +220,10 @@
 		},
 		{
 		"id":"31",
-		"question":"A cross between a horse and a zebra is called a Hobra.",
+		"question":"Mosquitoes Have 47 teeth",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
-		"correct":"FALSE"
+		"correct":"TRUE"
 		},
 		{
 		"id":"32",
@@ -269,7 +269,7 @@
 		},
 		{
 		"id":"38",
-		"question":"The singer Cher was born Cherilyn Sarkisian.",
+		"question":"The only letter that doesn't appear on the periodic table is J",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
 		"correct":"TRUE"
@@ -290,10 +290,10 @@
 		},
 		{
 		"id":"41",
-		"question":"Pastitsio is another term for dentures",
+		"question":"The average human dream lasts only 2 to 3 seconds.",
 		"choice1":"FALSE",
 		"choice2":"TRUE",
-		"correct":"FALSE"
+		"correct":"TRUE"
 		},
 		{
 		"id":"42",
@@ -319,7 +319,7 @@
 		{
 		"id":"45",
 		"question":"An average man have one birthday.",
-		"choice1":"FALSE",
+		"choice1":"TREU",
 		"choice2":"TRUE",
 		"correct":"TRUE"
 		},
@@ -363,14 +363,14 @@
 		"question":"Cinderella has seven dwarves.",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
-		"correct":"TRUE"
+		"correct":"FALSE"
 		},
 		{
 		"id":"52",
 		"question":"A monkey-eating-eagle is a monkey.",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
-		"correct":"TRUE"
+		"correct":"FALSE"
 		},
 		{
 		"id":"53",
@@ -402,17 +402,17 @@
 		},
 		{
 		"id":"57",
-		"question":"Hello Kitty is not a Cat",
+		"question":"Your brain is 80% water.",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
 		"correct":"TRUE"
 		},
 		{
 		"id":"58",
-		"question":"A hot dog doesn’t get cold.",
+		"question":"Jupiter is a planet made entirely of gases.",
 		"choice1":"FALSE",
 		"choice2":"TRUE",
-		"correct":"FALSE"
+		"correct":"TRUE"
 		},
 		{
 		"id":"59",
@@ -445,10 +445,10 @@
 		{
 		
 		"id":"63",
-		"question":"Snow White had a sister named Egg White. ",
+		"question":"A snail can sleep for 3 years straight! ",
 		"choice1":"FALSE",
 		"choice2":"TRUE",
-		"correct":"FALSE"
+		"correct":"TRUE"
 		},
 		{
 		"id":"64",
@@ -564,10 +564,10 @@
 		},
 		{
 		"id":"80",
-		"question":"Hiccup is a tall cup.",
+		"question":"Real Pearls melt in vinegar.",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
-		"correct":"FALSE"
+		"correct":"TRUE"
 		},
 		{
 		"id":"81",
@@ -767,9 +767,9 @@
 		},
 		{
 		"id":"109",
-		"question":"Right handed people live longer than left-handed people.",
-		"choice1":"TRUE",
-		"choice2":"FALSE",
+		"question":"ZERO divided by ONE is equal to ZERO.",
+		"choice1":"TREU",
+		"choice2":"TRUE",
 		"correct":"TRUE"
 		},
 		{
@@ -839,7 +839,7 @@
 		"id":"119",
 		"question":"Owls are the only birds who can see the colour blue.",
 		"choice1":"FALSE",
-		"choice2":"FALSE",
+		"choice2":"TRUE",
 		"correct":"TRUE"
 		},
 		{
@@ -886,17 +886,17 @@
 		},
 		{
 		"id":"126",
-		"question":"The “tree of life” is a coconut.",
+		"question":"There are more than fifty different kinds of kangaroos",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
 		"correct":"TRUE"
 		},
 		{
 		"id":"127",
-		"question":"Jollibee is a happy butterfly.",
-		"choice1":"TRUE",
-		"choice2":"FALSE",
-		"correct":"FALSE"
+		"question":"Polar bears are left handed.",
+		"choice1":"FALSE",
+		"choice2":"TRUE",
+		"correct":"TRUE"
 		},	
 		{
 		"id":"128",
@@ -984,22 +984,22 @@
 		},
 		{
 		"id":"140",
-		"question":"A Bombay Duck is a type of fish.",
+		"question":"The first animal sent up to outer space was a dog.",
 		"choice1":"FALSE",
 		"choice2":"TRUE",
-		"correct":"FALSE"
+		"correct":"TRUE"
 		},
 		{
 		"id":"141",
-		"question":"In Barbie, Ken's name is Ken Carson.",
+		"question":"Only male crickets can chirp.",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
 		"correct":"TRUE"
 		},
 		{
 		"id":"142",
-		"question":"Mr. Bean's name is Rowan Bean.",
-		"choice1":"FALSE",
+		"question":"1 + 1 = 2",
+		"choice1":"TREU",
 		"choice2":"TRUE",
 		"correct":"TRUE"
 		},
@@ -1012,7 +1012,7 @@
 		},
 		{
 		"id":"144",
-		"question":"Humpy Dumpty wasn't an egg.",
+		"question":"Humpy Dumpty was not an egg.",
 		"choice1":"TRUE",
 		"choice2":"FALSE",
 		"correct":"TRUE"
@@ -1058,7 +1058,15 @@
 		"choice1":"TRUE",
 		"choice2":"FALSE",
 		"correct":"FALSE"
+		},
+		{
+		"id":"151",
+		"question":"1 + 1 = 1",
+		"choice1":"FASLE",
+		"choice2":"FALSE",
+		"correct":"FALSE"
 		}
+		
 		
 	]
 
