@@ -9,21 +9,111 @@
 	/* onload FUNCTIONS START */
 
 	
+	
+	
+	/*---------------------------------- navigation btn and functions START -------------------------------------------*/
+	$("#stopTime").click(function(){
+		start();
+	});
+	
+	
 	/*
-	splashScreenIntro();//splash screen function --index.html
-	checkIfLogin();//--index.html
-	storeQuizArrayToLocalStorage();//store quizArray to localStorage --index.html
-	getLeaderboard(); //call ajax leaderboard; --leaderboard_page.html
-	displayGameOverScoreAndPreviousScore();//display score on --game_over_page.html
-	//gameStart();//--index.html
-	startRsg();main_game_page.html
+	$("#btn-play").click(function(){
+		savePreviousScore();
+		location.href = "main_game_page.html";
+	});
 	*/
+	$("#btn-gameover-test").click(function(){
+		
+	});
 	
+	$(".btn-main-menu").click(function(){
+		location.href = "index.html";
+	});
 	
-	//timer START
-	//var d=new Date();
-	//var mytime=d.getSeconds();
-	//var mytime=d.getMinutes();
+	$("#btn-leaderboard").click(function(){
+		//location.href = "leaderboard_page.html";
+		/* modal START */
+		//setTimeout(function(){
+		//	 $modal.load('leaderboard_page.html', '', function(){
+		//	 $modal.modal();
+		//	});
+		 // },10); 
+		/* modal END */
+		
+	});
+	/*
+	$(".btn-login").click(function(){
+		localStorageUsername = window.localStorage.getItem("username");
+		//alert(localStorageUsername);
+		if(localStorageUsername == "" || localStorageUsername == "null" || localStorageUsername == "undefined" ||localStorageUsername == null ){
+			//location.href = "login_page.html";
+			/* modal START*/
+			//var $modal = $(".index_modal_container");
+			//  setTimeout(function(){
+			//	 $modal.load('login_page.html', '', function(){
+			//	 $modal.modal();
+			//	});
+			// },10); 
+			
+			/* modal END*/
+			
+	/*		
+		}else{
+			logout();
+		}
+		
+	});*/
+	
+	$("#btn-register").click(function(){
+		//location.href = "registration_page.html"
+		
+		 setTimeout(function(){
+				 $modal.load('registration_page.html', '', function(){
+				  $modal.modal();
+				});
+			  },10); 
+	});
+	$("#btn-post-score-online").click(function(){
+		postScoreOnline();
+	});
+	
+	$("#btn-play-again").click(function(){
+		savePreviousScore();
+		//location.href = "main_game_page.html";
+		pageWrapper2Up();
+		setTimeout(function(){
+			startRsg();
+		});
+		
+	});
+	
+	$(".btn-choice").click(function(){
+			//setTimeout(myTimer1);
+			
+			//check answer START
+			var answer = $(this).val();
+			var correctAnswer = $("#correct-answer").val();
+			if(answer == correctAnswer){
+				addScore();
+				getQuestion();
+			}else{
+				gameOver();
+				//gameStart();
+			}
+			//check answer END
+		
+	
+		
+	});//onclick btn-choice END
+	
+	$("#my-logout").click(function(){
+		logout();
+	});
+	/*---------------------------------- navigation btn and functions END -------------------------------------------*/
+
+	
+	/* -------------------------------------- functions START --------------------------------------------------------------------*/
 	var myRsgTimer = "";
 	
 	var myTimer= "";  
@@ -128,119 +218,8 @@
 	//timer END
 	/* onload FUNCTIONS END */
 	
-	/*---------------------------------- navigation btn and functions START -------------------------------------------*/
-	$("#stopTime").click(function(){
-		start();
-	});
 	
 	
-	
-	
-	
-	
-	/*
-	$("#btn-play").click(function(){
-		savePreviousScore();
-		location.href = "main_game_page.html";
-	});
-	*/
-	$("#btn-gameover-test").click(function(){
-		
-	});
-	
-	$(".btn-main-menu").click(function(){
-		location.href = "index.html";
-	});
-	
-	$("#btn-leaderboard").click(function(){
-		//location.href = "leaderboard_page.html";
-		/* modal START */
-		//setTimeout(function(){
-		//	 $modal.load('leaderboard_page.html', '', function(){
-		//	 $modal.modal();
-		//	});
-		 // },10); 
-		/* modal END */
-		
-	});
-	/*
-	$(".btn-login").click(function(){
-		localStorageUsername = window.localStorage.getItem("username");
-		//alert(localStorageUsername);
-		if(localStorageUsername == "" || localStorageUsername == "null" || localStorageUsername == "undefined" ||localStorageUsername == null ){
-			//location.href = "login_page.html";
-			/* modal START*/
-			//var $modal = $(".index_modal_container");
-			//  setTimeout(function(){
-			//	 $modal.load('login_page.html', '', function(){
-			//	 $modal.modal();
-			//	});
-			// },10); 
-			
-			/* modal END*/
-			
-	/*		
-		}else{
-			logout();
-		}
-		
-	});*/
-	
-	$("#btn-register").click(function(){
-		//location.href = "registration_page.html"
-		
-		 setTimeout(function(){
-				 $modal.load('registration_page.html', '', function(){
-				  $modal.modal();
-				});
-			  },10); 
-	});
-	$("#btn-post-score-online").click(function(){
-		postScoreOnline();
-	});
-	
-	$("#btn-play-again").click(function(){
-		savePreviousScore();
-		//location.href = "main_game_page.html";
-		pageWrapper2Up();
-		setTimeout(function(){
-			startRsg();
-		});
-		
-	});
-	
-
-	
-	$(".btn-choice").click(function(){
-			//setTimeout(myTimer1);
-			
-			//check answer START
-			var answer = $(this).val();
-			var correctAnswer = $("#correct-answer").val();
-			if(answer == correctAnswer){
-				addScore();
-				getQuestion();
-			}else{
-				gameOver();
-				//gameStart();
-			}
-			//check answer END
-		
-	
-		
-	});//onclick btn-choice END
-	
-	$("#my-logout").click(function(){
-		logout();
-	});
-	/*---------------------------------- navigation btn and functions END -------------------------------------------*/
-
-	
-
-
-	
-	
-	/* -------------------------------------- functions START --------------------------------------------------------------------*/
 	//for index.html onload
 	function splashScreenIntro(){
 		var a = sessionStorage.getItem("splash_start");
