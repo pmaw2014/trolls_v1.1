@@ -2,7 +2,7 @@
 	
 	var x = 0;//eto ung index na laging tatanggaling sa questionsArray[] , 0 kase laging unang index lang tatanggalen nten;
 			var localStorageUsername = window.localStorage.getItem("username");//for checking if already login
-			var localQuizArrayName = "quizGeneric";// iba dapat kada game para sa function na storeQuizArrayToLocalStorage
+			var localQuizArrayName = "quizTrolls";//function na storeQuizArrayToLocalStorage
 	
 	/* ---------------------- mga kelangan  na variable END --------------------------------------------------------------------*/
 
